@@ -1,2 +1,3 @@
-# bloomfieldbliss
-Source for bloomfieldbliss website
+# Bloomfield Bliss
+
+Source for Bloomfield Bliss website
