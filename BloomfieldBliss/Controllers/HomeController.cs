@@ -13,18 +13,37 @@ namespace BloomfieldBliss.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult Reflexology()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Description of reflexology.";
 
+            return View();
+        }
+        public ActionResult Treatment()
+        {
+            return View();
+        }
+
+        public ActionResult Benefits()
+        {
+            return View();
+        }
+
+        public ActionResult Prices()
+        {
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Contact us.";
 
             return View();
         }
+        public ActionResult Location()
+        {
+            return View();
+        }
+
     }
 }

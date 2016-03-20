@@ -25,6 +25,7 @@ namespace BloomfieldBliss
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
+                      "~/Content/business-casual.css",
                       "~/Content/site.css"));
         }
     }
