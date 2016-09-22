@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<publishData><publishProfile profileName="bloomfieldbliss.co.uk - Web Deploy" publishMethod="MSDeploy" publishUrl="bloomfieldbliss.co.uk" msdeploySite="bloomfieldbliss.co.uk" userName="stewartmay" destinationAppUrl="http://bloomfieldbliss.co.uk" controlPanelLink="http://184.173.179.108"/></publishData>
