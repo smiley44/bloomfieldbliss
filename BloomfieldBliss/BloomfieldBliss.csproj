@@ -135,10 +135,13 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="img\bg.jpg" />
-    <Content Include="img\Candle+and+Bus+Card.jpg" />
+    <Content Include="img\budda_and_candle.png" />
+    <Content Include="img\candle_and_business_card.jpg" />
+    <Content Include="img\couch_and_pillow.png" />
     <Content Include="img\intro-pic.jpg" />
+    <Content Include="img\products_and_towels.jpg" />
     <Content Include="img\slide-1.jpg" />
-    <Content Include="img\slide-2.jpg" />
+    <Content Include="img\foot_reflexology_chart.jpg" />
     <Content Include="img\slide-3.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
