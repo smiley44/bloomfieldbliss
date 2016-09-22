@@ -3,25 +3,73 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+
+    <!-- Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+
+<div id="fb-root"></div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78979284-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script>
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="brand">Bloomfield Bliss</div>
+    <div class="address-bar">
+        Relax | Rest | Revive
+    </div>
+
+    <div class="navbar navbar-default" role="navigation">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+                @Html.ActionLink("Bloomfield Bliss", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
-            <div class="navbar-collapse collapse">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Reflexology", "Reflexology", "Home")</li>
+                    <li>@Html.ActionLink("Treatment", "Treatment", "Home")</li>
+                    <li>@Html.ActionLink("Benefits", "Benefits", "Home")</li>
+                    <li>@Html.ActionLink("Prices", "Prices", "Home")</li>
+                    @*<li>@Html.ActionLink("Location", "Location", "Home")</li>*@
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                 </ul>
             </div>
@@ -29,10 +77,23 @@
     </div>
     <div class="container body-content">
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
+
+        
+        <div class="row">
+            <div class="box">
+                <div  style="margin-right: 200px">
+                    <div style="float: left; width: 100%" class="fb-like" data-href="https://www.facebook.com/bloomfieldbliss/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+                    <div style="float: right; width: 200px;margin-right: -200px">
+                        &copy; @DateTime.Now.Year - Bloomfield Bliss
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        @*<footer>
+            <p>&copy; @DateTime.Now.Year - Bloomfield Bliss</p>
+        </footer>*@
     </div>
 
     @Scripts.Render("~/bundles/jquery")
