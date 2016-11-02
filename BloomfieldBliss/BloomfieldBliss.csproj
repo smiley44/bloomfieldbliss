@@ -137,7 +137,10 @@
     <Content Include="img\bg.jpg" />
     <Content Include="img\budda_and_candle.png" />
     <Content Include="img\candle_and_business_card.jpg" />
+    <Content Include="img\couch_and_curtains.jpg" />
     <Content Include="img\couch_and_pillow.png" />
+    <Content Include="img\couch_and_pillow.jpg" />
+    <Content Include="img\foot_bath.jpg" />
     <Content Include="img\intro-pic.jpg" />
     <Content Include="img\products_and_towels.jpg" />
     <Content Include="img\slide-1.jpg" />
